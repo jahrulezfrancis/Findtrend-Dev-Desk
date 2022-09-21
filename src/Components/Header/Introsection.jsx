@@ -5,7 +5,7 @@ import { WelcomeBox } from './Navigation';
 
 export default function IntroSection() {
     return(
-        <Box bgColor='#000000' minH='56em'>
+        <Box bgColor='#000000' minH='50em'>
             <Navigation />
             <WelcomeBox />
         </Box>
