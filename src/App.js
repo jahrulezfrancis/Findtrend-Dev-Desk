@@ -1,10 +1,16 @@
+import { Box } from '@chakra-ui/react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Homepage from './Components/Pages/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      <h1>You know what I mean</h1>
-    </div>
+    <Box>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='home' element={<Homepage />} />
+      </Routes>
+    </Box>
   );
 }
 
