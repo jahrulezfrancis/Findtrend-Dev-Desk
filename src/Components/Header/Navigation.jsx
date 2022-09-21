@@ -62,7 +62,7 @@ export function WelcomeBox() {
                         Don’t let your computer memories consumes all of those browser tabs. <br />
                         Findtrend  let you gathers all of your favorite website into one place.
                     </Text>
-                    <Button fontFamily='Allerta' p='1em' bgColor='#A8FF35' borderRadius='2em' w='10em' h='3em'>Get Started 🔥</Button>
+                    <Button _hover='none' fontFamily='Allerta' p='1em' bgColor='#A8FF35' borderRadius='2em' w='10em' h='3em'>Get Started 🔥</Button>
                 </Stack>
                 <HStack w='auto' m='3em'>
                     <Box>
