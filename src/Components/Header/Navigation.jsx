@@ -1,4 +1,4 @@
-import { HStack, Box, ListItem, UnorderedList, Image, Button, Spacer, VStack, Heading, Text } from '@chakra-ui/react'
+import { HStack, Box, ListItem, UnorderedList, Image, Button, Spacer, VStack, Heading, Text, Stack } from '@chakra-ui/react'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import HeaderLogo from "../Images/header-logo.png"
@@ -52,19 +52,31 @@ export default function Navigation() {
 export function WelcomeBox() {
     return (
         <Box>
-            <VStack>
-                <Heading color='white'>Minimize your tabs.</Heading>
-                <Heading color='white'>Find the trends!</Heading>
-                <Text color='white'>
-                    Don’t let your computer memories consumes all of those browser tabs. <br />
-                    Findtrend  let you gathers all of your favorite website into one place.
-                </Text>
-                <Button p='1em' bgColor='#A8FF35' borderRadius='2em' w='10em' h='3em'>Get started</Button>
+            <VStack spacing='4em'>
+                <Stack mt='5em' align='center' spacing='1em'>
+                    <Heading fontWeight='900' lineHeight='1.3em' fontSize='4em' textAlign='center' color='white'>
+                        Minimize your tabs. <br />
+                        Find the trends!
+                    </Heading>
+                    <Text lineHeight='1.7em' textAlign='center' color='#8B8B8B'>
+                        Don’t let your computer memories consumes all of those browser tabs. <br />
+                        Findtrend  let you gathers all of your favorite website into one place.
+                    </Text>
+                    <Button fontFamily='Allerta' p='1em' bgColor='#A8FF35' borderRadius='2em' w='10em' h='3em'>Get Started 🔥</Button>
+                </Stack>
                 <HStack w='auto' m='3em'>
-                    <Image w='18em' src={TwitterDesign} alt='' />
-                    <Image pt='5em'  w='18em' src={PinterestDesign} alt='' />
-                    <Image w='18em' src={FacebookDesign} alt='' />
-                    <Image pt='5em' w='18em' src={BaseballDesign} alt='' />
+                    <Box>
+                        <Image w='18em' src={TwitterDesign} alt='' />
+                    </Box>
+                    <Box pt='5em'>
+                        <Image w='18em' src={PinterestDesign} alt='' />
+                    </Box>
+                    <Box>
+                        <Image w='18em' src={FacebookDesign} alt='' />
+                    </Box>
+                    <Box ml='-30em' mt='4em' w='auto'>
+                        <Image pt='5em' w='18em' src={BaseballDesign} alt='' />
+                    </Box>
                 </HStack>
             </VStack>
         </Box>
