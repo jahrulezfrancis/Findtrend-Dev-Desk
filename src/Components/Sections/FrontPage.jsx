@@ -3,6 +3,29 @@ import { Box, Button, Heading, Stack, VStack, Text } from '@chakra-ui/react';
 import { BsFillLightningChargeFill } from "react-icons/bs"
 import { AiOutlineClose } from "react-icons/ai"
 
+export function AfterTabSection() {
+    return (
+        <Box mt='5em'>
+            <VStack>
+                <Heading>
+                    Findtrend helps you to increase your <br />
+                    productivity and reduce your computer's <br />
+                    memory load, <span style={{ color: '#ADADAD' }}> an application that can <br />
+                        fulfill your daily browsing needs.
+                    </span>
+                </Heading>
+            </VStack>
+            <Box mt='7em'>
+                <VStack>
+                    <Heading>
+                        Findtrend make +1000 Startup grow
+                    </Heading>
+                </VStack>
+            </Box>
+        </Box>
+    )
+}
+
 export function TabSection() {
     return (
         <Box bgColor='#A8FF35' minH='40em'>
@@ -28,3 +51,4 @@ export function TabSection() {
         </Box>
     )
 }
+
