@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai"
 
 export function AfterTabSection() {
     return (
-        <Box mt='5em'>
+        <Box mt='5em' p='0em'>
             <VStack>
                 <Heading>
                     Findtrend helps you to increase your <br />
