@@ -1,7 +1,17 @@
 import React from 'react';
-import { Box, Button, Heading, Stack, VStack, Text } from '@chakra-ui/react';
+import { Box, Button, Heading, Stack, VStack, Text, Flex, Image } from '@chakra-ui/react';
 import { BsFillLightningChargeFill } from "react-icons/bs"
 import { AiOutlineClose } from "react-icons/ai"
+import Microsoft from "../Images/microsoft.png"
+import Allar from "../Images/Allianz.png"
+import Upwork from "../Images/upwork.png"
+import Volvo from "../Images/volvo.png"
+// import Grub from "../Images/grab.png"
+// import Verizon from "../Images/verizon.png"
+import Coinbase from "../Images/coinbase.png"
+// import Expedia from "../Images/expedia.png"
+
+
 
 export function AfterTabSection() {
     return (
@@ -20,6 +30,13 @@ export function AfterTabSection() {
                     <Heading>
                         Findtrend make +1000 Startup grow
                     </Heading>
+                    <Flex>
+                        <Image src={Coinbase} alt='' />
+                        <Image src={Microsoft} alt='' />
+                        <Image src={Allar} alt='' />
+                        <Image src={Upwork} alt='' />
+                        <Image src={Volvo} alt='' />
+                    </Flex>
                 </VStack>
             </Box>
         </Box>
