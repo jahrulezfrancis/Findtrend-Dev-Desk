@@ -6,10 +6,18 @@ import Microsoft from "../Images/microsoft.png"
 import Allar from "../Images/Allianz.png"
 import Upwork from "../Images/upwork.png"
 import Volvo from "../Images/volvo.png"
-// import Grub from "../Images/grab.png"
-// import Verizon from "../Images/verizon.png"
+import Grub from "../Images/grab.png"
+import Verizon from "../Images/verizon.png"
 import Coinbase from "../Images/coinbase.png"
-// import Expedia from "../Images/expedia.png"
+import Expedia from "../Images/expedia.png"
+import Airtable from "../Images/airtable.png"
+import Magento from "../Images/magneto.png"
+import Carrera from "../Images/carrera.png"
+import Bonanza from "../Images/bonanza.png"
+import Wetransfer from "../Images/weTransfer.png"
+import Suzuki from "../Images/suzuki.png"
+import Algolia from "../Images/Algolia.png"
+import Heineken from "../Images/Heineken.png"
 
 
 
@@ -31,11 +39,17 @@ export function AfterTabSection() {
                         Findtrend make +1000 Startup grow
                     </Heading>
                     <Flex>
-                        <Image src={Coinbase} alt='' />
                         <Image src={Microsoft} alt='' />
                         <Image src={Allar} alt='' />
                         <Image src={Upwork} alt='' />
                         <Image src={Volvo} alt='' />
+                        <Image src={Grub} alt='' />
+                        <Image src={Verizon} alt='' />
+                        <Image src={Coinbase} alt='' />
+                        <Image src={Expedia} alt='' />
+                        <Image src={} alt='' />
+                        <Image src={} alt='' />
+
                     </Flex>
                 </VStack>
             </Box>
