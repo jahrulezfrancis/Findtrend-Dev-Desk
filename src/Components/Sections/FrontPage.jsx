@@ -19,7 +19,13 @@ import Suzuki from "../Images/suzuki.png"
 import Algolia from "../Images/Algolia.png"
 import Heineken from "../Images/Heineken.png"
 
-
+import Facebook from "../Images/facebook.png"
+import Twitter from "../Images/Twitter.png"
+import Dribble from "../Images/dribble.png"
+import Pinterest from "../Images/Pinterest.png"
+import Medium from "../Images/medium.png"
+import VK from "../Images/vk.png"
+import Linkedin from "../Images/linkedin.png"
 
 export function AfterTabSection() {
     return (
@@ -38,7 +44,7 @@ export function AfterTabSection() {
                     <Heading>
                         Findtrend make +1000 Startup grow
                     </Heading>
-                    <Flex direction='row' wrap='wrap' p='2em' justify='center'>
+                    <Flex direction='row' wrap='wrap' p='2em' justify='center' gap='3'>
                         <Image src={Microsoft} alt='' />
                         <Image src={Allar} alt='' />
                         <Image src={Upwork} alt='' />
@@ -56,6 +62,18 @@ export function AfterTabSection() {
                         <Image src={Algolia} alt='' />
                         <Image src={Heineken} alt='' />
                     </Flex>
+                    <VStack>
+                        <Heading>All platform connect to Findtrend</Heading>
+                        <Flex mt='1em'>
+                            <Image src={Facebook} alt='' />
+                            <Image src={Twitter} alt='' />
+                            <Image src={Dribble} alt='' />
+                            <Image src={Pinterest} alt='' />
+                            <Image src={Medium} alt='' />
+                            <Image src={VK} alt='' />
+                            <Image src={Linkedin} alt='' />
+                        </Flex>
+                    </VStack>
                 </VStack>
             </Box>
         </Box>
