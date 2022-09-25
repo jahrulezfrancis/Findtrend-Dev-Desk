@@ -38,7 +38,7 @@ export function AfterTabSection() {
                     <Heading>
                         Findtrend make +1000 Startup grow
                     </Heading>
-                    <Flex>
+                    <Flex direction='row' wrap='wrap' p='2em' justify='center'>
                         <Image src={Microsoft} alt='' />
                         <Image src={Allar} alt='' />
                         <Image src={Upwork} alt='' />
@@ -47,9 +47,14 @@ export function AfterTabSection() {
                         <Image src={Verizon} alt='' />
                         <Image src={Coinbase} alt='' />
                         <Image src={Expedia} alt='' />
-                        <Image src={} alt='' />
-                        <Image src={} alt='' />
-
+                        <Image src={Airtable} alt='' />
+                        <Image src={Magento} alt='' />
+                        <Image src={Carrera} alt='' />
+                        <Image src={Bonanza} alt='' />
+                        <Image src={Wetransfer} alt='' />
+                        <Image src={Suzuki} alt='' />
+                        <Image src={Algolia} alt='' />
+                        <Image src={Heineken} alt='' />
                     </Flex>
                 </VStack>
             </Box>
