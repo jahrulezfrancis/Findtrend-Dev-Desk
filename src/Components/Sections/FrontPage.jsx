@@ -65,23 +65,25 @@ export function AfterTabSection() {
                         <Image src={Algolia} alt='' />
                         <Image src={Heineken} alt='' />
                     </Flex>
-                    <VStack>
-                        <Heading>All platform connect to Findtrend</Heading>
-                        <Flex mt='1em'>
-                            <Image src={Facebook} alt='' />
-                            <Image src={Twitter} alt='' />
-                            <Image src={Dribble} alt='' />
-                            <Image src={Pinterest} alt='' />
-                            <Image src={Medium} alt='' />
-                            <Image src={VK} alt='' />
-                            <Image src={Linkedin} alt='' />
-                        </Flex>
-                    </VStack>
+                    <Box>
+                        <VStack>
+                            <Heading>All platform connect to Findtrend</Heading>
+                            <Flex pt='3em'>
+                                <Image src={Facebook} alt='' />
+                                <Image src={Twitter} alt='' />
+                                <Image src={Dribble} alt='' />
+                                <Image src={Pinterest} alt='' />
+                                <Image src={Medium} alt='' />
+                                <Image src={VK} alt='' />
+                                <Image src={Linkedin} alt='' />
+                            </Flex>
+                        </VStack>
+                    </Box>
 
-                    <VStack>
-                        <Image src={Tweet1} alt='' />
-                        <Image src={Tweet2} alt='' />
-                        <Image src={Tweet3} alt='' />
+                    <VStack spacing='1em' pt='5em'>
+                        <Image w='80%' src={Tweet1} alt='' />
+                        <Image w='80%' src={Tweet2} alt='' />
+                        <Image w='80%' src={Tweet3} alt='' />
                     </VStack>
                 </VStack>
             </Box>
