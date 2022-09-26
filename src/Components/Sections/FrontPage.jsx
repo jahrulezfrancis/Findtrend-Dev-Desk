@@ -18,6 +18,9 @@ import Wetransfer from "../Images/weTransfer.png"
 import Suzuki from "../Images/suzuki.png"
 import Algolia from "../Images/Algolia.png"
 import Heineken from "../Images/Heineken.png"
+import Tweet1 from "../Images/tweet1.png"
+import Tweet2 from "../Images/tweet2.png"
+import Tweet3 from "../Images/tweet3.png"
 
 import Facebook from "../Images/facebook.png"
 import Twitter from "../Images/Twitter.png"
@@ -73,6 +76,12 @@ export function AfterTabSection() {
                             <Image src={VK} alt='' />
                             <Image src={Linkedin} alt='' />
                         </Flex>
+                    </VStack>
+
+                    <VStack>
+                        <Image src={Tweet1} alt='' />
+                        <Image src={Tweet2} alt='' />
+                        <Image src={Tweet3} alt='' />
                     </VStack>
                 </VStack>
             </Box>
