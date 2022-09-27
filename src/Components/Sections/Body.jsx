@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Box, Heading, VStack, Stack, Switch, Text, Divider, HStack, Flex, List, ListItem, ListIcon, Button, Spacer, useMediaQuery } from "@chakra-ui/react";
 import { BsCheckCircle } from "react-icons/bs";
+import { FcCancel } from "react-icons/fc"
 
 
 function PricingTemp(props) {
@@ -63,14 +64,17 @@ export function PricingList() {
                     <Switch size='lg' onChange={() => { selected === true ? setselected(false) : setselected(true) }} />
                     <Text color={selected ? 'ash' : 'white'}>Yearly</Text>
                 </Stack>
+                <Text color='whitesmoke' display={selected ? "none" : "block"}>Save 10% when your select to pay Yearly</Text>
             </VStack>
             <Flex direction={onMobile ? "column" : 'row'} justify='center' align='start' pt='2em' spacing='1em'>
                 <PricingTemp price={selected ? "8" : (8 / 100 * 70).toFixed(1)} background='white'
                     packageType='Personal' packageDesc='Special First Package for all'
-                    packageList1='naso you know' packageList1Icon={BsCheckCircle}
+                    packageList1='Up to 5 page each group' packageList1Icon={BsCheckCircle}
                     packageList2='Up to 10 group page' packageList2Icon={BsCheckCircle}
                     packageList3='5 Days group page saved' packageList3Icon={BsCheckCircle}
-                    packageList4='naso you know' packageList4Icon={BsCheckCircle}
+                    packageList4='' packageList4Icon={FcCancel}
+                    packageList5='' packageList5Icon={FcCancel}
+                    packageList6='' packageList6Icon={FcCancel}
                     buttonColor='#A8FF35'
                 />
                 <PricingTemp price={selected ? "20" : (20 / 100 * 70).toFixed(1)} background='#A8FF35'
@@ -79,14 +83,18 @@ export function PricingList() {
                     packageList2='naso you know' packageList2Icon={BsCheckCircle}
                     packageList3='naso you know' packageList3Icon={BsCheckCircle}
                     packageList4='naso you know' packageList4Icon={BsCheckCircle}
+                    packageList5='' packageList5Icon={FcCancel}
+                    packageList6='' packageList6Icon={FcCancel}
                     buttonColor='#000000' btntextColor='white'
                 />
                 <PricingTemp price={selected ? "48" : (48 / 100 * 70).toFixed(1)} background='white'
                     packageType='Premium' packageDesc='Packet for Startup & Company'
-                    packageList1='naso you know' packageList1Icon={BsCheckCircle}
-                    packageList2='naso you know' packageList2Icon={BsCheckCircle}
-                    packageList3='naso you know' packageList3Icon={BsCheckCircle}
-                    packageList4='naso you know' packageList4Icon={BsCheckCircle}
+                    packageList1='Unlimited page each group' packageList1Icon={BsCheckCircle}
+                    packageList2='Unlimited page each group' packageList2Icon={BsCheckCircle}
+                    packageList3='Unlimited page each group' packageList3Icon={BsCheckCircle}
+                    packageList4='Customize sorting group pages' packageList4Icon={BsCheckCircle}
+                    packageList5='Customize group page name' packageList5Icon={BsCheckCircle}
+                    packageList6='30 Days group page saved' packageList6Icon={BsCheckCircle}
                     buttonColor='#A8FF35'
                 />
             </Flex>
