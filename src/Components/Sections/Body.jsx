@@ -65,15 +65,15 @@ export function PricingList() {
                 </Stack>
             </VStack>
             <Flex direction={onMobile ? "column" : 'row'} justify='center' align='start' pt='2em' spacing='1em'>
-                <PricingTemp price='8' background='white'
+                <PricingTemp price={selected ? "8" : (8 / 100 * 70).toFixed(1)} background='white'
                     packageType='Personal' packageDesc='Special First Package for all'
                     packageList1='naso you know' packageList1Icon={BsCheckCircle}
-                    packageList2='naso you know' packageList2Icon={BsCheckCircle}
-                    packageList3='naso you know' packageList3Icon={BsCheckCircle}
+                    packageList2='Up to 10 group page' packageList2Icon={BsCheckCircle}
+                    packageList3='5 Days group page saved' packageList3Icon={BsCheckCircle}
                     packageList4='naso you know' packageList4Icon={BsCheckCircle}
                     buttonColor='#A8FF35'
                 />
-                <PricingTemp price='20' background='#A8FF35'
+                <PricingTemp price={selected ? "20" : (20 / 100 * 70).toFixed(1)} background='#A8FF35'
                     packageType='Regular' packageDesc='Recommended for personal pro'
                     packageList1='naso you know' packageList1Icon={BsCheckCircle}
                     packageList2='naso you know' packageList2Icon={BsCheckCircle}
@@ -81,7 +81,7 @@ export function PricingList() {
                     packageList4='naso you know' packageList4Icon={BsCheckCircle}
                     buttonColor='#000000' btntextColor='white'
                 />
-                <PricingTemp price='48' background='white'
+                <PricingTemp price={selected ? "48" : (48 / 100 * 70).toFixed(1)} background='white'
                     packageType='Premium' packageDesc='Packet for Startup & Company'
                     packageList1='naso you know' packageList1Icon={BsCheckCircle}
                     packageList2='naso you know' packageList2Icon={BsCheckCircle}
