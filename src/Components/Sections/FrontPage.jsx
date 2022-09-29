@@ -85,6 +85,9 @@ export function AfterTabSection() {
                         <Image w='80%' src={Tweet2} alt='' />
                         <Image w='80%' src={Tweet3} alt='' />
                     </VStack>
+                    <Box p='2em'>
+                        <Button p='1.5em' borderRadius='2em' _hover='none' bgColor='black' color='white'>View More Trends</Button>
+                    </Box>
                 </VStack>
             </Box>
         </Box>
