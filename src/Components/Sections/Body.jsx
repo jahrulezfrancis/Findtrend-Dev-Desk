@@ -59,12 +59,12 @@ export function Footer() {
 
     return (
         <Box m='1em'>
-            <HStack justify={onMobile ? 'center' : 'space-between'} >
-                <Stack direction={onMobile ? 'column' : 'row'} spacing='2em'>
-                    <Image src={FooterLogo} alt='footerLogo' />
-                    <Spacer />
-                    <List>
-                        <Stack justify={onMobile ? 'center' : 'center'} gap={onMobile ? '2em' : '2em'}
+            <HStack justify={onMobile ? 'center' : 'around'} >
+                <List>
+                    <Stack direction={onMobile ? 'column' : 'row'} spacing='1em'>
+                        <Image src={FooterLogo} alt='footerLogo' />
+                        <Spacer />
+                        <Stack justify={onMobile ? 'center' : 'center'} gap={onMobile ? '0em' : '2em'}
                             align={onMobile ? 'center' : 'center'}
                             direction={onMobile ? 'column' : 'row'} spacing='2em' mr={onMobile ? '0em' : '0em'}
                         >
@@ -81,8 +81,8 @@ export function Footer() {
                                 <NavLink>Careers</NavLink>
                             </ListItem>
                         </Stack>
-                    </List>
-                </Stack>
+                    </Stack>
+                </List>
             </HStack>
         </Box >
     )
