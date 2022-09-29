@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Box, Heading, VStack, Stack, Switch, Text, Divider, HStack, Flex, List, ListItem, ListIcon, Button, Spacer, useMediaQuery } from "@chakra-ui/react";
+import { Box, Heading, VStack, Stack, Switch, Text, Divider, HStack, Flex, List, ListItem, ListIcon, Image, Button, Spacer, useMediaQuery } from "@chakra-ui/react";
 import { BsCheckCircle } from "react-icons/bs";
 import { FcCancel } from "react-icons/fc"
+import FooterLogo from "../Images/footer-logo.png"
 
 
 function PricingTemp(props) {
@@ -47,6 +48,28 @@ function PricingTemp(props) {
                 <Box align='end' justify='end' p='2em'>
                     <Button _hover='none' bgColor={props.buttonColor} color={props.btntextColor}>Start free trial</Button>
                 </Box>
+            </VStack>
+        </Box>
+    )
+}
+
+export function Footer(){
+
+    return(
+        <Box>
+            <HStack>
+            <Image src={FooterLogo} alt='footerLogo' />
+
+            </HStack>
+        </Box>
+    )
+}
+
+export function BottomSec(){
+    return(
+        <Box bgColor='#A8FF35'>
+            <VStack>
+                <Heading></Heading>
             </VStack>
         </Box>
     )
