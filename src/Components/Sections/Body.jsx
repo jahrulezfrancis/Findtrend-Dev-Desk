@@ -3,6 +3,7 @@ import { Box, Heading, VStack, Stack, Switch, Text, Divider, HStack, Flex, List,
 import { BsCheckCircle } from "react-icons/bs";
 import { FcCancel } from "react-icons/fc"
 import FooterLogo from "../Images/footer-logo.png"
+import { NavLink } from "react-router-dom";
 
 
 function PricingTemp(props) {
@@ -53,20 +54,36 @@ function PricingTemp(props) {
     )
 }
 
-export function Footer(){
+export function Footer() {
 
-    return(
-        <Box>
+    return (
+        <Box m='1em'>
             <HStack>
-            <Image src={FooterLogo} alt='footerLogo' />
-
+                <Image src={FooterLogo} alt='footerLogo' />
+                <Spacer/>
+                <List>
+                    <HStack spacing='2em' mr='2em'>
+                        <ListItem>
+                            <NavLink>Privary Policy</NavLink>
+                        </ListItem>
+                        <ListItem>
+                            <NavLink>Terms and Conditions</NavLink>
+                        </ListItem>
+                        <ListItem>
+                            <NavLink>Contact Us</NavLink>
+                        </ListItem>
+                        <ListItem>
+                            <NavLink>Careers</NavLink>
+                        </ListItem>
+                    </HStack>
+                </List>
             </HStack>
         </Box>
     )
 }
 
-export function BottomSec(){
-    return(
+export function BottomSec() {
+    return (
         <Box bgColor='#A8FF35'>
             <VStack>
                 <Heading></Heading>
