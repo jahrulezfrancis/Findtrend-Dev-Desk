@@ -74,11 +74,18 @@ export function MobileMenu() {
                             How it works
                         </MenuItem>
                         <MenuItem>
-                            Solution
+                            Pricing
+                        </MenuItem>
+                        <MenuItem>
+                            Solutions
                         </MenuItem>
                         <MenuItem>
                             Features
                         </MenuItem>
+                        <MenuItem>
+                        </MenuItem>
+                        <Button bgColor='white' color='black' borderRadius='2em' w='8em'>Register</Button>
+                        <Button bgColor='black' color='white' _hover='none' borderRadius='2em'>Login</Button>
                     </MenuList>
                 </Menu>
             </HStack>
@@ -114,7 +121,7 @@ export function WelcomeBox() {
                         <Image w='18em' src={FacebookDesign} alt='' />
                     </Box>
                     <Box ml={onMobile ? '0em' : '0em'} mt={onMobile ? '0em' : '0em'} w='auto'>
-                        <Image pt={onMobile ? '0em' : '5em' } w='18em' src={BaseballDesign} alt='' />
+                        <Image pt={onMobile ? '0em' : '5em'} w='18em' src={BaseballDesign} alt='' />
                     </Box>
                 </Flex>
             </VStack>
