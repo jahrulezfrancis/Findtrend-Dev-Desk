@@ -1,6 +1,6 @@
 import {
     HStack, Box, ListItem, UnorderedList, Image, Button, Spacer, VStack, Heading, Text,
-    Stack, Menu, IconButton, MenuButton, MenuList, MenuItem, useMediaQuery
+    Stack, Menu, IconButton, MenuButton, MenuList, MenuItem, useMediaQuery,
 } from '@chakra-ui/react'
 
 import React from 'react'
@@ -58,24 +58,30 @@ export default function Navigation() {
 export function MobileMenu() {
     const [onMobile] = useMediaQuery('(max-width: 1000px)')
     return (
-        <Box display={onMobile ? 'block' : 'none'}>
-            <Menu>
-                <MenuButton as={IconButton} icon={<MdMenu />} />
-                <MenuList>
-                    <MenuItem>
-                        About
-                    </MenuItem>
-                    <MenuItem>
-                        How it works
-                    </MenuItem>
-                    <MenuItem>
-                        Solution
-                    </MenuItem>
-                    <MenuItem>
-                        Features
-                    </MenuItem>
-                </MenuList>
-            </Menu>
+        <Box display={onMobile ? 'block' : 'none'} p='1em' w='100vw'>
+            <HStack>
+                <Stack>
+                    <Image src={HeaderLogo} alt='header logo' />
+                </Stack>
+                <Spacer />
+                <Menu>
+                    <MenuButton color='white' bgColor='#000000' _hover={{bgColor: '#87D322'}} fontSize='2em' as={IconButton} icon={<MdMenu />} />
+                    <MenuList>
+                        <MenuItem>
+                            About
+                        </MenuItem>
+                        <MenuItem>
+                            How it works
+                        </MenuItem>
+                        <MenuItem>
+                            Solution
+                        </MenuItem>
+                        <MenuItem>
+                            Features
+                        </MenuItem>
+                    </MenuList>
+                </Menu>
+            </HStack>
         </Box>
     )
 }
