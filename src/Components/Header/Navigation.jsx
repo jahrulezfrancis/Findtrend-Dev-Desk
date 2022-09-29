@@ -1,6 +1,6 @@
 import {
     HStack, Box, ListItem, UnorderedList, Image, Button, Spacer, VStack, Heading, Text,
-    Stack, Menu, IconButton, MenuButton, MenuList, MenuItem, useMediaQuery,
+    Stack, Menu, IconButton, MenuButton, MenuList, MenuItem, useMediaQuery, Flex,
 } from '@chakra-ui/react'
 
 import React from 'react'
@@ -65,7 +65,7 @@ export function MobileMenu() {
                 </Stack>
                 <Spacer />
                 <Menu>
-                    <MenuButton color='white' bgColor='#000000' _hover={{bgColor: '#87D322'}} fontSize='2em' as={IconButton} icon={<MdMenu />} />
+                    <MenuButton color='white' bgColor='#000000' _hover={{ bgColor: '#87D322' }} fontSize='2em' as={IconButton} icon={<MdMenu />} />
                     <MenuList>
                         <MenuItem>
                             About
@@ -87,6 +87,8 @@ export function MobileMenu() {
 }
 
 export function WelcomeBox() {
+    const [onMobile] = useMediaQuery('(max-width: 1000px)')
+
     return (
         <Box>
             <VStack spacing='4em'>
@@ -101,20 +103,20 @@ export function WelcomeBox() {
                     </Text>
                     <Button _hover='none' fontFamily='Allerta' p='1em' bgColor='#A8FF35' borderRadius='2em' w='10em' h='3em'>Get Started 🔥</Button>
                 </Stack>
-                <HStack w='auto' m='3em'>
+                <Flex w='auto' m='3em' direction={onMobile ? 'column' : 'row'}>
                     <Box>
                         <Image w='18em' src={TwitterDesign} alt='' />
                     </Box>
-                    <Box pt='5em'>
+                    <Box pt={onMobile ? '0em' : '5em'}>
                         <Image w='18em' src={PinterestDesign} alt='' />
                     </Box>
                     <Box>
                         <Image w='18em' src={FacebookDesign} alt='' />
                     </Box>
-                    <Box ml='-30em' mt='4em' w='auto'>
-                        <Image pt='5em' w='18em' src={BaseballDesign} alt='' />
+                    <Box ml={onMobile ? '0em' : '0em'} mt={onMobile ? '0em' : '0em'} w='auto'>
+                        <Image pt={onMobile ? '0em' : '5em' } w='18em' src={BaseballDesign} alt='' />
                     </Box>
-                </HStack>
+                </Flex>
             </VStack>
         </Box>
     )
