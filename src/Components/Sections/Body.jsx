@@ -99,7 +99,7 @@ export function PricingList() {
     const [selected, setselected] = useState(true);
     return (
         <Box bgColor='#000000' p='2em'>
-            <VStack>
+            <VStack justify={onMobile ? 'center' : 'start'}>
                 <Heading color='white'>Get Your Best Deals</Heading>
                 <Stack align='center' direction='row'>
                     <Text color={selected ? 'white' : 'ash'} _active={{ color: 'white' }}>Monthly</Text>
@@ -108,7 +108,7 @@ export function PricingList() {
                 </Stack>
                 <Text color='whitesmoke' display={selected ? "none" : "block"}>Save 10% when your select to pay Yearly</Text>
             </VStack>
-            <Flex direction={onMobile ? "column" : 'row'} justify='center' align='start' pt='2em' spacing='1em'>
+            <Flex direction={onMobile ? "column" : 'row'} justify='center' align={onMobile ? "center" : 'start' } pt='2em' spacing='1em'>
                 <PricingTemp price={selected ? "8" : (8 / 100 * 70).toFixed(1)} background='white'
                     packageType='Personal' packageDesc='Special First Package for all'
                     packageList1='Up to 5 page each group' packageList1Icon={BsCheckCircle}
