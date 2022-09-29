@@ -84,9 +84,11 @@ export function Footer() {
 
 export function BottomSec() {
     return (
-        <Box bgColor='#A8FF35'>
-            <VStack>
-                <Heading></Heading>
+        <Box bgColor='#A8FF35' minH='22em' >
+            <VStack align='center' justify='center' pt='7em' spacing='.3em'>
+                <Heading>Join us on email for</Heading>
+                <Heading color='#87D322'>more trending topics</Heading>
+                <Button w='8em' h='3em' bgColor='black' color='white' _hover='none' borderRadius='2em' p='1em'>Join Now</Button>
             </VStack>
         </Box>
     )
