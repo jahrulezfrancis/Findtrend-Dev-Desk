@@ -1,6 +1,6 @@
 import {
     HStack, Box, ListItem, UnorderedList, Image, Button, Spacer, VStack, Heading, Text,
-    Stack, Menu, IconButton, MenuButton, MenuList, MenuItem
+    Stack, Menu, IconButton, MenuButton, MenuList, MenuItem, useMediaQuery
 } from '@chakra-ui/react'
 
 import React from 'react'
@@ -14,8 +14,9 @@ import BaseballDesign from "../Images/log-elo-musk.png"
 
 
 export default function Navigation() {
+    const [onMobile] = useMediaQuery('(max-width: 1000px)')
     return (
-        <Box>
+        <Box display={onMobile ? 'none' : 'block'}>
             <UnorderedList listStyleType='none' mr='.8em' p='1em'>
                 <HStack justify=''>
                     <ListItem>
@@ -55,8 +56,9 @@ export default function Navigation() {
 }
 
 export function MobileMenu() {
+    const [onMobile] = useMediaQuery('(max-width: 1000px)')
     return (
-        <Box>
+        <Box display={onMobile ? 'block' : 'none'}>
             <Menu>
                 <MenuButton as={IconButton} icon={<MdMenu />} />
                 <MenuList>
