@@ -112,7 +112,8 @@ export function PricingList() {
                     <Switch size='lg' onChange={() => { selected === true ? setselected(false) : setselected(true) }} />
                     <Text color={selected ? 'ash' : 'white'}>Yearly</Text>
                 </Stack>
-                <Text color='whitesmoke' display={selected ? "none" : "block"}>Save 10% when your select to pay Yearly</Text>
+                <Text color='whitesmoke' display={selected ? "block" : "none"}>Save 10% when your select to pay Yearly</Text>
+                <Text color='whitesmoke' display={selected ? "none" : "block"}>You are saving 10% off when you pay yearly</Text>
             </VStack>
             <Flex direction={onMobile ? "column" : 'row'} justify='center' align={onMobile ? "center" : 'start'} pt='2em' spacing='1em'>
                 <PricingTemp price={selected ? "8" : (8 / 100 * 70).toFixed(1)} background='white'
