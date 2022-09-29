@@ -55,30 +55,36 @@ function PricingTemp(props) {
 }
 
 export function Footer() {
+    const [onMobile] = useMediaQuery('(max-width: 1000px)')
 
     return (
         <Box m='1em'>
-            <HStack>
-                <Image src={FooterLogo} alt='footerLogo' />
-                <Spacer/>
-                <List>
-                    <HStack spacing='2em' mr='2em'>
-                        <ListItem>
-                            <NavLink>Privary Policy</NavLink>
-                        </ListItem>
-                        <ListItem>
-                            <NavLink>Terms and Conditions</NavLink>
-                        </ListItem>
-                        <ListItem>
-                            <NavLink>Contact Us</NavLink>
-                        </ListItem>
-                        <ListItem>
-                            <NavLink>Careers</NavLink>
-                        </ListItem>
-                    </HStack>
-                </List>
+            <HStack justify={onMobile ? 'center' : 'space-between'} >
+                <Stack direction={onMobile ? 'column' : 'row'} spacing='2em'>
+                    <Image src={FooterLogo} alt='footerLogo' />
+                    <Spacer />
+                    <List>
+                        <Stack justify={onMobile ? 'center' : 'center'} gap={onMobile ? '2em' : '2em'}
+                            align={onMobile ? 'center' : 'center'}
+                            direction={onMobile ? 'column' : 'row'} spacing='2em' mr={onMobile ? '0em' : '0em'}
+                        >
+                            <ListItem>
+                                <NavLink>Privary Policy</NavLink>
+                            </ListItem>
+                            <ListItem>
+                                <NavLink>Terms and Conditions</NavLink>
+                            </ListItem>
+                            <ListItem>
+                                <NavLink>Contact Us</NavLink>
+                            </ListItem>
+                            <ListItem>
+                                <NavLink>Careers</NavLink>
+                            </ListItem>
+                        </Stack>
+                    </List>
+                </Stack>
             </HStack>
-        </Box>
+        </Box >
     )
 }
 
@@ -108,7 +114,7 @@ export function PricingList() {
                 </Stack>
                 <Text color='whitesmoke' display={selected ? "none" : "block"}>Save 10% when your select to pay Yearly</Text>
             </VStack>
-            <Flex direction={onMobile ? "column" : 'row'} justify='center' align={onMobile ? "center" : 'start' } pt='2em' spacing='1em'>
+            <Flex direction={onMobile ? "column" : 'row'} justify='center' align={onMobile ? "center" : 'start'} pt='2em' spacing='1em'>
                 <PricingTemp price={selected ? "8" : (8 / 100 * 70).toFixed(1)} background='white'
                     packageType='Personal' packageDesc='Special First Package for all'
                     packageList1='Up to 5 page each group' packageList1Icon={BsCheckCircle}
