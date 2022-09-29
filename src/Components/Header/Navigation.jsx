@@ -1,5 +1,10 @@
-import { HStack, Box, ListItem, UnorderedList, Image, Button, Spacer, VStack, Heading, Text, Stack } from '@chakra-ui/react'
+import {
+    HStack, Box, ListItem, UnorderedList, Image, Button, Spacer, VStack, Heading, Text,
+    Stack, Menu, IconButton, MenuButton, MenuList, MenuItem
+} from '@chakra-ui/react'
+
 import React from 'react'
+import { MdMenu } from "react-icons/md"
 import { NavLink } from 'react-router-dom'
 import HeaderLogo from "../Images/header-logo.png"
 import TwitterDesign from "../Images/log-twitter.png"
@@ -45,6 +50,30 @@ export default function Navigation() {
                     </Box>
                 </HStack>
             </UnorderedList>
+        </Box>
+    )
+}
+
+export function MobileMenu() {
+    return (
+        <Box>
+            <Menu>
+                <MenuButton as={IconButton} icon={<MdMenu />} />
+                <MenuList>
+                    <MenuItem>
+                        About
+                    </MenuItem>
+                    <MenuItem>
+                        How it works
+                    </MenuItem>
+                    <MenuItem>
+                        Solution
+                    </MenuItem>
+                    <MenuItem>
+                        Features
+                    </MenuItem>
+                </MenuList>
+            </Menu>
         </Box>
     )
 }
