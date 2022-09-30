@@ -13,6 +13,7 @@ import PinterestDesign from "../Images/log-pinterest.png"
 import BaseballDesign from "../Images/log-elo-musk.png"
 
 
+
 export default function Navigation() {
     const [onMobile] = useMediaQuery('(max-width: 1000px)')
     return (
@@ -92,6 +93,8 @@ export function MobileMenu() {
         </Box>
     )
 }
+
+
 
 export function WelcomeBox() {
     const [onMobile] = useMediaQuery('(max-width: 1000px)')
