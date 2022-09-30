@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react';
-import Navigation, { MobileMenu, MobileMenuOver } from './Navigation';
+import Navigation, { MobileMenu } from './Navigation';
 import { WelcomeBox } from './Navigation';
 
 export default function IntroSection() {
