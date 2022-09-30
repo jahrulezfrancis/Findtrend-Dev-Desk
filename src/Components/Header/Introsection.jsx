@@ -1,10 +1,10 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react';
-import Navigation, { MobileMenu } from './Navigation';
+import Navigation, { MobileMenu, MobileMenuOver } from './Navigation';
 import { WelcomeBox } from './Navigation';
 
 export default function IntroSection() {
-    return(
+    return (
         <Box bgColor='#000000' minH='50em'>
             <Navigation />
             <MobileMenu />
